@@ -28,3 +28,88 @@
   font-family: 'Roboto';
   border: 0px;
 }
+
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100vh;
+
+  background-color: rgba(0, 0, 0, 0.5);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-container {
+  background-color: #ffffff;
+
+  width: 90%;
+  max-width: 400px;
+
+  padding: 24px;
+
+  border-radius: 10px;
+}
+
+.popup-heading {
+  text-align: center;
+
+  margin-bottom: 20px;
+}
+
+.payment-options {
+  display: flex;
+  flex-direction: column;
+}
+
+.payment-option {
+  margin-bottom: 12px;
+}
+
+.summary-details {
+  margin-top: 20px;
+  background-color: #f1f5f9;
+  padding: 12px;
+  border-radius: 8px;
+}
+
+.confirm-button {
+  width: 100%;
+  border: none;
+  padding: 12px;
+  margin-top: 20px;
+  background-color: #0b69ff;
+  color: #ffffff;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.confirm-button:disabled {
+  background-color: #94a3b8;
+  cursor: not-allowed;
+}
+
+.close-button {
+  width: 100%;
+  border: none;
+  padding: 12px;
+  margin-top: 10px;
+  background-color: #475569;
+  color: #ffffff;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.success-view {
+  text-align: center;
+}
+
+.success-message {
+  color: green;
+  font-size: 18px;
+  font-weight: 600;
+}
